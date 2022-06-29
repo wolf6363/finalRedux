@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* сбить все margin*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* сбить все margin*/
+
+body {
+  padding: 0 20px;
+  min-height: 100vh;
+  background: rgb(85, 85, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 85, 88, 1) 0%,
+    rgba(70, 70, 73, 1) 56%
+  );
+}
+
+.search-input {
+  position: relative;
+  margin: 155px auto;
+  width: 450px;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.search-input input {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: linear-gradient(#333335, #333436);
+  border-radius: 7px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(202, 199, 199);
+  filter: drop-shadow(0mm 6mm 2.5mm rgb(44, 42, 44));
+  box-shadow: 4px 7px 12px rgba(41, 39, 39, 0.596);
+}
+
+.repo li {
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+  list-style: none;
+  width: 95%;
+  cursor: default;
+  padding: 8px 12px;
+  margin: 1px;
+  border-bottom: 1px solid rgb(85, 82, 82);
+  color: rgb(179, 177, 177);
+  font-family: 'Montserrat', sans-serif;
+  background: #403f41;
+  margin-bottom: 6px;
+  transition: 0.3s;
+  box-shadow: 4px 2px 12px rgba(19, 18, 18, 0.719);
+}
+
+.repo li:hover {
+  cursor: pointer;
+  background: rgba(27, 27, 27, 0.911);
+  font-weight: bold;
+  transform: scale(1.11);
+  border: none;
+  box-shadow: none;
+}
+
+.search-input ion-icon {
+  position: absolute;
+  right: 20px;
+  color: rgb(128, 125, 125);
+  font-size: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.repo {
+  filter: drop-shadow(-1mm 4mm 2mm rgb(44, 42, 44));
+  padding-top: 10px;
+  margin-left: 23px;
+}
+
+.popup {
+  opacity: 0;
+  pointer-events: none;
+  width: 250px;
+  height: 150px;
+  top: 0;
+  left: 100px;
+  border-radius: 5px;
+  z-index: 0;
+  position: relative;
+  cursor: default;
+  padding: 12px 12px;
+  margin-top: 5px;
+  color: rgb(179, 177, 177);
+  font-family: 'Montserrat', sans-serif;
+  background: #343435;
+  box-shadow: 14px 10px 12px rgba(19, 18, 18, 0.719);
+}
+p {
+  padding: 5px;
+}
+span {
+  padding-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.close-icon {
+  position: relative;
+  z-index: 233;
+}
